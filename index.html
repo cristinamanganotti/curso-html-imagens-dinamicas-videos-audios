@@ -19,7 +19,16 @@
     <h2>
         Reproduzindo áudios
     </h2>
-    <audio src="midias/musica.mp3" type="mp3"></audio>
-    <p>Se não for possível ouvir o áudio, faça o download <a href="midias/musica.mp3"></a>aqui.</p>
+ 
+<audio preload="metadata" controls> <!--autoplay não é muito legal.
+    Nunca usar loop, é extremamente irritante!-->
+    <source src="midias/musica.mp3" type="audio/mpeg">
+</audio>
+<!-- Se o áudio travar no navegador, fechar a aba e abri-lá novamente -->
+<p>
+Se o navegador não suportar o áudio <a href="midias/musica.mp3" download="musica-projeto.mp3">
+clique aqui</a> para baixá-lo
+</p>
+<audio ></audio>
 </body>
-</html>
+    </html>
